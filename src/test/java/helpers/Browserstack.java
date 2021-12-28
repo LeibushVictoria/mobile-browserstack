@@ -9,8 +9,8 @@ public class Browserstack {
     public static String videoUrl(String sessionId) {
         CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
-        String login = config.userName();
-        String password = config.mobileKey();
+        String login = config.browserStackUser();
+        String password = config.browserStackKey();
         return given()
                 .auth().basic(login, password)
                 .when()

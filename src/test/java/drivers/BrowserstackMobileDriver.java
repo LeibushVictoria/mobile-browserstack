@@ -14,9 +14,9 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
     public static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
-    String user = config.userName();
-    String key = config.mobileKey();
-    String url = config.appURL();
+    String user = config.browserStackUser();
+    String key = config.browserStackKey();
+    String url = config.browserStackAppURL();
 
     public static URL getBrowserstackUrl() {
         try {

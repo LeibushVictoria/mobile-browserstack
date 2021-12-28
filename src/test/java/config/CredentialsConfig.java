@@ -4,9 +4,13 @@ import org.aeonbits.owner.Config;
 
 @Config.Sources({"classpath:credential.properties"})
 public interface CredentialsConfig extends Config {
-    String userName();
+    String browserStackUser();
 
-    String mobileKey();
+    String browserStackKey();
 
-    String appURL();
+    String browserStackAppURL();
+
+    String selenoidUser();
+
+    String selenoidPass();
 }
