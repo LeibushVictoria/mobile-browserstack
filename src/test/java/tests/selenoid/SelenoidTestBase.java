@@ -36,7 +36,6 @@ public class SelenoidTestBase {
 
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
-//        Attach.browserConsoleLogs();
 
         closeWebDriver();
 
