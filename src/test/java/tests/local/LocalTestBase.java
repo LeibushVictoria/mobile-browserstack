@@ -2,7 +2,7 @@ package tests.local;
 
 import com.codeborne.selenide.Configuration;
 import drivers.LocalMobileDriver;
-import helpers.Attach;
+import helpers.AllureAttachments;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -31,8 +31,8 @@ public class LocalTestBase {
 
     @AfterEach
     public void afterEach() {
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
+        AllureAttachments.screenshotAs("Last screenshot");
+        AllureAttachments.pageSource();
 
         closeWebDriver();
     }

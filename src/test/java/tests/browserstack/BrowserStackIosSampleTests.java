@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-
 public class BrowserStackIosSampleTests {
 
     void searchTest() throws MalformedURLException, InterruptedException {

@@ -7,7 +7,6 @@ import pages.FoundPage;
 import pages.MainPage;
 import pages.MenuPage;
 
-
 @Tag("browserstack_android")
 public class BrowserStackAndroidSelenideTests extends BrowserStackTestBase {
 

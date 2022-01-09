@@ -21,6 +21,5 @@ public class Browserstack {
                 .extract()
                 .response()
                 .path("automation_session.video_url");
-
     }
 }
