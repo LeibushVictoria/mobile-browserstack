@@ -7,16 +7,9 @@
 ___
 
 ## :heavy_check_mark: Тестируемая функциональность
-- Получение данных всех пользователей
-- Получение данных пользователя по id
-- Получение данных пользователя по id (Пользователь не найден)
-- Создание нового пользователя
-- Изменение данных пользователя
-- Удаление пользователя
-- Успешная регистрация пользователя
-- Неуспешная регистрация пользователя
-- Успешная авторизация пользователя
-- Неуспешная авторизация пользователя
+- Выполнение поиска
+- Переход в раздел настроек
+- Прохождение getting started
 
 ## :pushpin: В качестве CI системы использован Jenkins
 ### [Проект](https://jenkins.autotests.cloud/job/08-levikss-browserstack/)
@@ -26,7 +19,7 @@ ___
 ## :arrow_forward: Запуск тестов
 
 Для запуска тестов необходим файл credential.properties
-```bash
+```
 browserStackUser=<значение User с Browserstack>
 browserStackKey=<значение Key с Browserstack>
 browserStackAppURL=bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c // для Samsung Galaxy S9
@@ -34,17 +27,15 @@ selenoidUser=<значение User с selenoid.autotests.cloud>
 selenoidPass=<значение Pass с selenoid.autotests.cloud>
 ```
 Для запуска тестов на реальном устройстве необходимо выполнить следующую команду:
-```bash
+```
 gradle clean local
 ```
 Для запуска тестов в selenoid необходимо выполнить следующую команду:
-
-```bash
+```
 gradle clean selenoid
 ```
 Для запуска тестов на сервисе browserstack необходимо выполнить следующую команду:
-
-```bash
+```
 gradle clean browserstack
 ```
 
@@ -52,7 +43,7 @@ gradle clean browserstack
 
 Для генерации отчета необходимо выполнить следующую команду:
 
-```bash
+```
 allure serve build/allure-results
 ```
 
